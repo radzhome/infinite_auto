@@ -97,6 +97,7 @@
     color: var(--primary);
 }
 
+
 @media (max-width: 991.98px) {
     .navbar-light .navbar-nav .nav-link  {
         margin-right: 0;
@@ -195,7 +196,7 @@
 
 /*** Facts ***/
 .fact {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/carousel-bg-1.jpg);
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/carousel-bg-3.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -380,4 +381,16 @@
     margin-right: 0;
     padding-right: 0;
     border-right: none;
+}
+
+/* anchored footer to scroll to the section anchor title */
+.anchored-link {
+    padding-top: 95px;
+    margin-top: -95px;
+}
+@media (max-width: 992px) {
+    .anchored-link {
+        padding-top: 336px;
+        margin-top: -336px;
+    }
 }

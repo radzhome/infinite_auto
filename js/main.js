@@ -1,7 +1,7 @@
 (function ($) {
     "use strict";
 
-    // Spinner
+    // Spinner show - when page loading
     var spinner = function () {
         setTimeout(function () {
             if ($('#spinner').length > 0) {
@@ -10,9 +10,9 @@
         }, 1);
     };
     spinner();
-    
-    
-    // Initiate the wowjs
+
+
+    // Initiate wow.js
     new WOW().init();
 
 
@@ -24,14 +24,14 @@
             $('.sticky-top').css('top', '-100px');
         }
     });
-    
-    
+
+
     // Dropdown on mouse hover
     const $dropdown = $(".dropdown");
     const $dropdownToggle = $(".dropdown-toggle");
     const $dropdownMenu = $(".dropdown-menu");
     const showClass = "show";
-    
+
     $(window).on("load resize", function() {
         if (this.matchMedia("(min-width: 992px)").matches) {
             $dropdown.hover(
@@ -52,8 +52,22 @@
             $dropdown.off("mouseenter mouseleave");
         }
     });
-    
-    
+
+    // Collapse navbar on click for anchor tags  -
+    // https://stackoverflow.com/questions/42401606/how-to-hide-collapsible-bootstrap-navbar-on-click
+    const navLinks = document.querySelectorAll('.nav-item')
+    const menuToggle = document.getElementById('navbarCollapse')
+    navLinks.forEach((l) => {
+        // hide navbar
+        l.addEventListener('click', () => { $('.navbar-collapse').collapse('hide') })
+    })
+
+    // set as active nav link and dropdown menu items
+    $(".navbar .nav-link, .navbar .dropdown-item").on("click", function(){
+       $(".navbar").find(".active").removeClass("active");
+       $(this).addClass("active");
+    });
+
     // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 300) {
@@ -63,7 +77,7 @@
         }
     });
     $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        $('html, body').animate({scrollTop: 0}, 100, 'easeInOutExpo'); // 100 is delay
         return false;
     });
 
@@ -75,13 +89,13 @@
     });
 
 
-    // Date and time picker
-    $('.date').datetimepicker({
-        format: 'L'
-    });
-    $('.time').datetimepicker({
-        format: 'LT'
-    });
+    // Date and time picker - NOT USED (set appointment form)
+//    $('.date').datetimepicker({
+//        format: 'L'
+//    });
+//    $('.time').datetimepicker({
+//        format: 'LT'
+//    });
 
 
     // Testimonials carousel
@@ -105,6 +119,6 @@
             }
         }
     });
-    
+
 })(jQuery);
 
