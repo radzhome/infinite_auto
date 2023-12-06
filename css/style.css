@@ -371,6 +371,8 @@
     color: var(--light);
 }
 
+
+
 .footer .footer-menu a {
     margin-right: 15px;
     padding-right: 15px;
@@ -393,4 +395,20 @@
         padding-top: 336px;
         margin-top: -336px;
     }
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+.testimonial-image {
+    width: 80px !important;
+    height: 80px !important;
 }
