@@ -11,6 +11,7 @@
 
 * Add write a review link in https://developers.google.com/maps/documentation/javascript/examples/places-placeid-finder
 Placeid -  ChIJy7KSVw6ZLIgR2l6qil9Ba-o
+* make /index.html just go to /
 
 
 link is
