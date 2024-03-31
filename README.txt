@@ -4,6 +4,7 @@
 * https://fontawesome.com/v5/cheatsheet/free/solid
 * Free transparent car images https://www.freeiconspng.com/images/car-png
 * TODO: Instagram, youtube, Twitter
+# TODO: pro tips page, videos
 * Examples:
 * https://www.linkedin.com/company/orleanstoyota-belairteam/?originalSubdomain=ca
 * https://www.instagram.com/orleans.toyota/
