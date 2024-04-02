@@ -18,3 +18,7 @@ Placeid -  ChIJy7KSVw6ZLIgR2l6qil9Ba-o
 link is
 <a href="https://search.google.com/local/writereview?placeid=ChIJy7KSVw6ZLIgR2l6qil9Ba-o" target="_blank">Write Review</a>
 
+
+# Blog posts
+
+* Use starting template, update all todos and for seo meta tags
