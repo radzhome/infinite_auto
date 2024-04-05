@@ -57,10 +57,11 @@
     // https://stackoverflow.com/questions/42401606/how-to-hide-collapsible-bootstrap-navbar-on-click
     const navLinks = document.querySelectorAll('.nav-item')
     const menuToggle = document.getElementById('navbarCollapse')
-    navLinks.forEach((l) => {
-        // hide navbar
-        l.addEventListener('click', () => { $('.navbar-collapse').collapse('hide') })
-    })
+    /* enabling this wont let you open sub nav menu in mobile */
+//    navLinks.forEach((l) => {
+//        // hide navbar
+//        l.addEventListener('click', () => { $('.navbar-collapse').collapse('hide') })
+//    })
 
     // set as active nav link and dropdown menu items
     $(".navbar .nav-link, .navbar .dropdown-item").on("click", function(){
