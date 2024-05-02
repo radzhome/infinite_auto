@@ -412,3 +412,10 @@
     width: 80px !important;
     height: 80px !important;
 }
+
+.breaking-banner {
+    background-color: #D81324;
+    color: #FFFFFF;
+    font-weight: 500;
+    text-transform: uppercase;
+}
